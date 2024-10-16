@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=EDGE">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style type="text/css">
+      body {
+        height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #6a6a6a;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .truncate-text {
+        max-width: 200px;
+        /* Adjust based on your layout */ white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      input[type=date], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select, textarea {
+        color: #262626;
+        vertical-align: baseline;
+        margin: .2em;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #a9a9a9;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 2px .5em;
+        appearance: none;
+        border-radius: 0;
+      }
+      input:focus {
+        border-color: #646464;
+        box-shadow: 0 0 1px 0 #a2a2a2;
+        outline: 0;
+      }
+      button {
+        padding: .5em 1em;
+        border: 1px solid;
+        border-radius: 3px;
+        min-width: 6em;
+        font-weight: 400;
+        font-size: .8em;
+        cursor: pointer;
+      }
+      button.primary {
+        color: #fff;
+        background-color: rgb(47, 113, 178);
+        border-color: rgb(34, 103, 173);
+      }
+      button.disabled {
+        background-color: #c0c0c0;
+        border-color: #a9a9a9;
+        cursor: not-allowed;
+      }
+      .message-container {
+        height: 500px;
+        width: 600px;
+        padding: 0;
+        margin: 10px;
+      }
+      .logo {
+        background: url(%%IMAGE:logo_ptx%%) no-repeat center;/*get logo*/
+        height: 157px;
+        object-fit: contain;
+      }
+      table {
+        background-color: #fff;
+        border-spacing: 0;
+        margin: 1em;
+      }
+      table>tbody>tr>td:first-of-type:not([colspan]) {
+        white-space: nowrap;
+        color: rgba(0, 0, 0, .5);
+      }
+      table>tbody>tr>td:first-of-type {
+        vertical-align: top;
+      }
+      table>tbody>tr>td {
+        padding: .3em .3em;
+      }
+      .field {
+        display: table-row;
+      }
+      .field> :first-child {
+        display: table-cell;
+        width: 20%;
+      }
+      .field.single> :first-child {
+        display: inline;
+      }
+      .field> :not(:first-child) {
+        width: auto;
+        max-width: 100%;
+        display: inline-flex;
+        align-items: baseline;
+        vertical-align: top;
+        box-sizing: border-box;
+        margin: .3em;
+      }
+      .field> :not(:first-child)>input {
+        width: 230px;
+      }
+      .form-footer {
+        display: inline-flex;
+        justify-content: flex-start;
+      }
+      .form-footer>* {
+        margin: 1em;
+      }
+      .text-scrollable {
+        overflow: auto;
+        height: 150px;
+        border: 1px solid rgb(200, 200, 200);
+        padding: 5px;
+        font-size: 1em;
+      }
+      .text-centered {
+        text-align: center;
+      }
+      .text-container {
+        margin: 1em 1.5em;
+      }
+      .flex-container {
+        display: flex;
+      }
+      .flex-container.column {
+        flex-direction: column;
+      }
+      /* CSS untuk membuat teks checkbox tetap satu baris */
+      .checkbox-label {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+      }
+      .checkbox-label input[type="checkbox"] {
+        margin-right: 8px;
+      }
+      
+    </style>
+    
+    <title>
+      Firewall Authentication 
+    </title>
+    
+  </head>
+  
+  <body>
+    
+    <div class="message-container">
+      
+      <div class="logo">
+        
+      </div>
+      
+      <h1>
+        Silahkan 
+        <i>
+          Login 
+        </i>
+        Untuk Menggunakan Fasilitas Internet 
+      </h1>
+      <!-- Pindahkan syarat dan ketentuan ke atas -->
+      <h1>
+        Syarat dan Ketentuan Penggunaan WiFi 
+      </h1>
+      
+      <form action="%%DISCLAIMER_ACT%%" method="%%DISCLAIMER_METHOD%%">
+        
+        <input type="hidden" name="%%REDIRID%%" value="%%PROTURI%%">
+        
+        <input type="hidden" name="%%MAGICID%%" value="%%MAGICVAL%%">
+        
+        <input type="hidden" name="%%ANSWERID%%" value="%%DECLINEVAL%%">
+        
+        <div class="text-scrollable">
+          
+          <b>
+            1. Penerimaan Syarat Penggunaan 
+          </b>
+          
+          <br>
+          Dengan menggunakan jaringan Wi-Fi PT XXXXXX, Anda setuju untuk mematuhi syarat dan ketentuan berikut ini. Jika Anda tidak setuju, mohon untuk tidak menggunakan jaringan ini. 
+          <br>
+          
+          <br>
+          
+          <b>
+            2. Penggunaan yang Diizinkan 
+          </b>
+          
+          <br>
+          Wi-Fi ini disediakan untuk keperluan pekerjaan dan kegiatan bisnis PT XXXXXX. Penggunaan untuk tujuan lain yang melanggar hukum atau peraturan perusahaan tidak diperbolehkan, termasuk namun tidak terbatas pada: Mengunduh, menginstal, atau menggunakan perangkat lunak (software) bajakan atau ilegal. 
+          <br>
+          
+          <br>
+          
+          <b>
+            3. Tanggung Jawab Pengguna 
+          </b>
+          
+          <br>
+          Pengguna bertanggung jawab atas setiap aktivitas yang dilakukan selama menggunakan jaringan Wi-Fi PT XXXXXX. Setiap pelanggaran terhadap syarat dan ketentuan ini dapat dikenakan sanksi. 
+          <br>
+          
+          <br>
+          
+          <b>
+            4. Keamanan dan Privasi 
+          </b>
+          
+          <br>
+          PT XXXXXX berhak memantau lalu lintas data yang menggunakan jaringan Wi-Fi perusahaan untuk memastikan kepatuhan terhadap kebijakan ini. 
+          <br>
+          
+          <br>
+          
+          <b>
+            5. Konsekuensi Hukum 
+          </b>
+          
+          <br>
+          Pelanggaran terhadap ketentuan ini dapat mengakibatkan tuntutan hukum. 
+          <br>
+          
+          <br>
+          
+          <b>
+            6. Perubahan Syarat dan Ketentuan 
+          </b>
+          
+          <br>
+          PT XXXXXX berhak mengubah syarat dan ketentuan ini sewaktu-waktu tanpa pemberitahuan terlebih dahulu. 
+          <br>
+          
+          <br>
+          
+          <b>
+            7. Kontak 
+          </b>
+          
+          <br>
+          Jika Anda memiliki pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi tim IT PT xxxxxx melalui email it@XXXXX.XX.XX. 
+        </div>
+        
+      </form>
+      <!-- Form login di bawah -->
+      <form id="loginForm" action="%%AUTH_POST_URL%%" method="post">
+        
+        <input type="hidden" name="%%REDIRID%%" value="%%PROTURI%%">
+        
+        <input type="hidden" name="%%MAGICID%%" value="%%MAGICVAL%%">
+        
+        <input type="hidden" name="%%METHODID%%" value="%%METHODVAL%%">
+        
+        <p>
+          Fasilitas internet digunakan sebagai penunjang pekerjaan, Silahkan gunakan fasilitas ini dengan bijak. Terima kasih. 
+          <br>
+          
+        </p>
+        
+        <!-- Checkbox untuk menyetujui syarat dan ketentuan dipindahkan ke atas form username -->
+        <div class="field single">
+          
+          <label for="agreement" class="checkbox-label">
+            
+            <input type="checkbox" id="agreement" required>
+            Saya setuju dengan syarat dan ketentuan 
+          </label>
+          
+        </div>
+        
+        <div class="field">
+          <br>
+          <label for="ft_un">
+            Username 
+          </label>
+          
+          <div>
+            
+            <input name="%%USERNAMEID%%" id="ft_un" type="text" autocorrect="off" autocapitalize="off">
+          </br>
+          
+        </div>
+        
+      </div>
+      
+      <div class="field">
+        <br>
+        <label for="ft_pd">
+          Password 
+        </label>
+        
+        <div>
+          
+          <input name="%%PASSWORDID%%" id="ft_pd" type="password" autocorrect="off" autocapitalize="off">
+        </br>
+      </div>
+      
+    </div>
+    
+    <div class="form-footer">
+      
+      <button id="loginButton" class="primary disabled" disabled>
+        Login 
+      </button>
+      
+    </div>
+    
+  </form>
+  
+</div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('loginForm');
+    const checkbox = document.getElementById('agreement');
+    const button = document.getElementById('loginButton');
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) {
+        button.disabled = false;
+        button.classList.remove('disabled');
+      }
+      else {
+        button.disabled = true;
+        button.classList.add('disabled');
+      }
+    }
+                             );
+    form.addEventListener('submit', function(event) {
+      if (!checkbox.checked) {
+        event.preventDefault();
+        alert('Harap centang kotak syarat dan ketentuan sebelum login.');
+      }
+    }
+                         );
+  }
+                           );
+</script>
+</html>
